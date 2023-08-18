@@ -8,11 +8,8 @@ on:
 jobs:
   composite_example:
     runs-on: ubuntu-latest
-
-    steps:
-    
-      - uses: aqeeleurus/finish-release-dir/.github/workflows/blank.yml@main
-        with:
-          branch-name: test
-          merge-to-branch-name: main
-          token: ${{ secrets.CUSTOM_PAT }}
+    - uses: aqeeleurus/finish-release-dir/.github/workflows/blank.yml@main
+      with:
+        branch-name: test
+        merge-to-branch-name: main
+        token: ${{ secrets.CUSTOM_PAT }}
