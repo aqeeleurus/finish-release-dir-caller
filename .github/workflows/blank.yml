@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ref: main
 
       # Call the reusable workflow (composite action)
       - name: Call finish-release-dir composite action
