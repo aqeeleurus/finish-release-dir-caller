@@ -10,9 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Call Composite Action
-        uses: aqeeleurus/finish-release-dir/.github/workflows/blank.yml@main
+    
+      - uses: aqeeleurus/finish-release-dir/.github/workflows/blank.yml@main
         with:
           branch-name: test
           merge-to-branch-name: main
