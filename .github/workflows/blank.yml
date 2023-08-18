@@ -15,7 +15,7 @@ jobs:
 
       # Call the reusable workflow (composite action)
       - name: Call finish-release-dir composite action
-        uses: aqeeleurus/finish-release-dir/github/workflows/blank.yml@main
+        uses: aqeeleurus/finish-release-dir/github/workflows@main
         with:
           branch-name: test
           merge-to-branch-name: main
