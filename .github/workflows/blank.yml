@@ -24,4 +24,4 @@ jobs:
         with:
           branch-name: test
           merge-to-branch-name: main
-          token: ${{ secrets.CUSTOM_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
