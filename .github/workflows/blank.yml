@@ -22,6 +22,6 @@ jobs:
       - name: Call finish-release-dir composite action
         uses: aqeeleurus/finish-release-dir/action@main
         with:
-          branch-name: test
+          branch-name: test1
           merge-to-branch-name: main
           token: ${{ secrets.GITHUB_TOKEN }}
